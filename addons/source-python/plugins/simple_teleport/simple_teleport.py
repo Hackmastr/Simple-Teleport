@@ -22,7 +22,7 @@ from translations.strings import LangStrings
 # =============================================================================
 info = PluginInfo("simple_teleport")
 info.basename = "simple_teleport"
-info.name = "Simple teleport plugin"
+info.name = "Simple Teleport"
 info.description = "Easily teleport players"
 info.author = "Kill, iPlayer"
 info.version = "1.0"
