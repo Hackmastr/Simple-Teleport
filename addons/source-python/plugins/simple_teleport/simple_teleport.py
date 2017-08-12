@@ -247,7 +247,7 @@ def callback(popup, index, option):
 # =============================================================================
 # >> COMMANDS
 # =============================================================================
-@TypedClientCommand("sp_teleport")
+@TypedClientCommand("sp_teleport", permission="kst_teleport")
 @TypedSayCommand("!tp", permission="kst_teleport")  # Alias
 @TypedSayCommand("/tp", permission="kst_teleport")  # Alias
 @TypedSayCommand("/teleport", permission="kst_teleport")
@@ -259,7 +259,7 @@ def cmd_teleport(cmd):
     return CommandReturn.CONTINUE
 
 
-@TypedSayCommand("!tpstuck", "kst_teleport")
+@TypedSayCommand("!tpstuck", permission="kst_teleport")
 def cmd_teleport(cmd):
     player = Player(cmd.index)
 
